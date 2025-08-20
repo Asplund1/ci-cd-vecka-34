@@ -1,0 +1,21 @@
+{
+  "name": "ci-cd",
+  "version": "1.0.0",
+  "description": "lära mig ci/cd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asplund1/ci-cd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Asplund1/ci-cd/issues"
+  },
+  "homepage": "https://github.com/Asplund1/ci-cd#readme"
+}
