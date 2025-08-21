@@ -1,22 +1,15 @@
-// frontend/eslint.config.js
-import js from '@eslint/js';
-import globals from 'globals';
+import js from "@eslint/js";
 
 export default [
-  { ignores: ['node_modules/**', 'dist/**', 'build/**'] },
   js.configs.recommended,
   {
-    files: ['**/*.{js,jsx}'],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      ecmaFeatures: { jsx: true },
-      globals: { ...globals.browser, ...globals.node }
+      ecmaVersion: "latest",
+      sourceType: "module",
     },
     rules: {
-      'no-unused-vars': 'error',
-      'quotes': ['error', 'single'],
-      'semi': ['error', 'always']
+      semi: "error",        // exempelregel: kräver semikolon
+      quotes: ["error", "double"] // exempelregel: kräver dubbelfnuttar
     }
   }
 ];
