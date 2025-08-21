@@ -1,0 +1,38 @@
+name: full-ci
+
+on: 
+    push:
+        branches: main
+
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    uppgift-5:
+        runs-on: ubuntu-latest
+
+        steps: 
+            - name: check out code
+              uses: actions/checkout@v4
+
+            - name: set up node.js 20
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20
+                cache: npm
+
+            - name: install dependencies
+              run: npm install
+
+            - name: run tests
+              run: npm test              
+
+              # build (körs bara om ovan testerna är godkända)
+            - name: build project
+              run: npm test
+
+            - name: pipeline success message
+              if: ${{ success() }}
+              run: 'echo "pipeline passed: install, tests and build completed on ${GITHUB_REF_NAME} @ ${GITHUB_SHA}"'
+              
