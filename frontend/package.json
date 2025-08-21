@@ -3,7 +3,7 @@
     "eslint": "^9.33.0"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings=0",
+    "lint": "node ./node_modules/eslint/bin/eslint.js . --max-warnings=0",
     "test": "echo \"Running tests...\" && exit 0",
     "build": "vite build"
   },
