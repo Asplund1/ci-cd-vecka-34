@@ -2,7 +2,8 @@ name: Frontend CI
 
 on: 
     push:
-        branches: [ "main"]
+        branches: 
+          - main
 
 jobs:
  Build-and-test:
@@ -11,7 +12,11 @@ jobs:
     steps:
         - name: check out code
           uses: actions/checkout@v4
+
+        - name: print branch and commit
+          run: echo Branch="${GITHUB_REF_NAME}" Commit="${GITHUB_SHA}"
           
+
         - name: Set up node.js 20
           uses: actions/setup-node@v4
           with:
