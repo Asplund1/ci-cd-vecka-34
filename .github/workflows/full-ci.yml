@@ -2,12 +2,12 @@ name: full-ci
 
 on: 
     push:
-        branches: main
+        branches: 
+            - main
 
     pull_request:
         branches:
             - main
-
 jobs:
     uppgift-5:
         runs-on: ubuntu-latest
@@ -35,4 +35,3 @@ jobs:
             - name: pipeline success message
               if: ${{ success() }}
               run: 'echo "pipeline passed: install, tests and build completed on ${GITHUB_REF_NAME} @ ${GITHUB_SHA}"'
-              
