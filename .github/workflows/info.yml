@@ -1,0 +1,19 @@
+name: Info workflow
+
+on: 
+    push:
+        branches: 
+          - main
+
+jobs:
+ info-check: #namn på jobbet
+    runs-on: ubuntu-latest
+    steps: 
+        - name: checkout code
+          uses: actions/checkout@v4
+
+        - name: print commmit info
+          uses: 'echo commit="${GITHUB_SHA}" on branch="${GITHUB_REF_NAME}"'
+          
+
+
