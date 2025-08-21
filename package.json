@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Asplund1/ci-cd#readme",
   "dependencies": {
-    "eslint": "^9.33.0"
+    "eslint": "^9.33.0",
+    "vite": "^6.3.5"
   }
 }
