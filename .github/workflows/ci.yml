@@ -31,3 +31,4 @@ jobs:
 
         - name: build project
           run: npm run build
+#testar punkt 4 i uppgift 3
