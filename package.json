@@ -4,10 +4,9 @@
   "description": "lära mig ci/cd",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Running tests...\" && exit 0",
-  "build": "echo \"Building...\" && exit 0"
-}
-,
+    "test": "echo \"Running tests...\" && exit 0",
+    "build": "echo \"Building...\" && exit 0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Asplund1/ci-cd.git"
@@ -19,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Asplund1/ci-cd/issues"
   },
-  "homepage": "https://github.com/Asplund1/ci-cd#readme"
+  "homepage": "https://github.com/Asplund1/ci-cd#readme",
+  "dependencies": {
+    "eslint": "^9.33.0"
+  }
 }
