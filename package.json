@@ -4,8 +4,8 @@
   "description": "lära mig ci/cd",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Running tests...\" && exit 0",
-  "build": "echo \"Building...\" && exit 0"
+  "test": "echo \"Running tests...\" && exit 1",
+  "build": "echo \"Building...\" && exit 1"
 }
 ,
   "repository": {
