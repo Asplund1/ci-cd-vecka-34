@@ -36,4 +36,4 @@ jobs:
 
       - name: Mock deploy
         if: ${{ success() }}
-        run: echo "deploying application.....(simmmulerad)
+        run: echo "deploying application.....(simmmulerad)"
