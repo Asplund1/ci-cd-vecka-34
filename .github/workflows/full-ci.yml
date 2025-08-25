@@ -10,6 +10,7 @@ on:
             - main
 jobs:
     uppgift-7:
+        name: Full pipeline
         runs-on: ubuntu-latest
 
         steps: 
@@ -23,10 +24,10 @@ jobs:
                 cache: npm
 
             - name: install dependencies
-              run: npm install --prefix frontend
+              run: npm ci 
 
             - name: run lint 
-              run: npm run lint --prefix frontend
+              run: npm run lint 
 
             - name: run tests
               run: npm test 
