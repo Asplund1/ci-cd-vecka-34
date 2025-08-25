@@ -33,3 +33,7 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Mock deploy
+        if: ${{ success() }}
+        run: echo "deploying application.....(simmmulerad)
