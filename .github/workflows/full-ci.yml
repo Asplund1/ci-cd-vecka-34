@@ -32,8 +32,13 @@ jobs:
         run: npm test
 
       - name: Build project
+        if: github.ref_name == 'main'
         run: npm run build
 
       - name: Mock deploy
-        if: ${{ success() }}
+        if: github.ref_name == 'main'
         run: echo "deploying application.....(simmmulerad)"
+
+      - name: pipeline success message
+        if: ${{ success( )}}
+        run: echo "piplinen passad till branch ${GITHUB_REF_NAME}"
