@@ -1,24 +1,16 @@
 {
   "name": "ci-cd",
   "version": "1.0.0",
-  "description": "lära mig ci/cd",
-  "main": "index.js",
-    "scripts": {
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint . --max-warnings=0",
-    "test": "echo \"Running tests...\" && exit 0",
-    "build": "vite build"
-}
-,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Asplund1/ci-cd.git"
+    "test": "echo \"Running tests...\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Asplund1/ci-cd/issues"
-  },
-  "homepage": "https://github.com/Asplund1/ci-cd#readme"
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "eslint": "^9.33.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
 }
